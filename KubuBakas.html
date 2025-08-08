@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubu Bakas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-image {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .floating-btn {
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero-image relative" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/66/ed/80/caption.jpg?w=1200&h=-1&s=1')">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Kubu Bakas</h1>
+                <p class="text-xl md:text-2xl text-white italic">Jelajahi Alam, Rasakan Petualangan</p>
+                <a href="#explore" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Jelajahi Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Destination Info -->
+        <section id="explore" class="mb-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Mengenal Kubu Bakas</h2>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Kubu Bakas Guest House adalah akomodasi tradisional di Desa Wisata Bakas, Banjarangkan, Klungkung, Bali. Host lokal yang hangat dan lokasi di tengah sawah hijau menjadikannya pilihan ideal untuk ketenangan dan pengalaman alam desa yang otentik. Dinilai dengan skor sangat tinggi, yaitu 9,7 dari 205 ulasan
+                </p>
+                <p class="text-gray-700 mb-6 leading-relaxed">
+                    Beralamat di Jl Dewi Sri No.2, Dusun Kangin, Desa Bakas, Banjarangkan, Klungkung, Bali
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-10">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Aktivitas Menarik</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-bicycle text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Rental sepeda untuk jelajah pedesaan dan sawah sekitar</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-mountain text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Trekking ringan di sawah dan kebun desa</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-utensils text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Kelas memasak lokal dan tur budaya bersama penduduk</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-spa text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Spa & pijat tradisional (beberapa opsional, berbayar)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-fish text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Tur ke pantai, snorkel, diving, memancing, kano (lokasi terpisah, mungkin biaya tambahan)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Keunikan</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-mountain text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Penginapan di tengah hamparan sawah yang asri, cocok untuk menikmati sunrise/sunset dan suara alam seperti jangkrik, kodok, burung</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-heart text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Layanan sangat personal dari host (Ari & Sindi), yang juga memberi informasi lokal dan panduan budaya Bali</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-utensils text-blue-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Tersedia warung di lokasi yang menyajikan kuliner lokal seperti Serombotan Klungkung, Mujair Nyat-Nyat, dan jajanan tradisional lainnya dengan harga mulai Rp 5.000–32.000 saja</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Galeri Kubu Bakas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/375654090.jpg?k=1cf03842780eedf61a6013ad2d7db2ca978aebb3df21524e346b784bb53b0c45&o=&hp=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/66/ed/80/caption.jpg?w=1200&h=-1&s=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/375654090.jpg?k=1cf03842780eedf61a6013ad2d7db2ca978aebb3df21524e346b784bb53b0c45&o=&hp=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/50/64/01/caption.jpg?w=1200&h=-1&s=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6a8f22bb-33a8-4642-87d4-c5069a2734ee_IMG_20201019_103501_322.jpg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cdn5.travelconline.com/images/fit-in/2000x0/filters:quality(75):strip_metadata():format(webp)/https%3A%2F%2Fq-xx.bstatic.com%2Fxdata%2Fimages%2Fhotel%2Fmax2000%2F480959427.jpg%3Fk%3D40081d629fda5a939a253626540e0c099ab76be59e08e176f834afb698199e65%26o%3D" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+            </div>
+        </section>
+
+        <!-- Video -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center"></h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container rounded-xl overflow-hidden shadow-xl">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ecXHaqXdxgw?si=doOeYhpfUnY92yO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Informasi Praktis</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-info-circle text-blue-600 mr-3"></i> Fasilitas
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Area parkir luas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Toilet umum bersih</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Warung makan dan kafe</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Wi-Fi gratis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Area piknik, perapian luar ruangan, teras berjemur & BBQ</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Penginapan</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-clock text-blue-600 mr-3"></i> Jam Operasional
+                        </h3>
+                        <p class="text-gray-700 mb-4">Jam operasional warung/restoran di area Kubu Bakas: setiap hari pukul 10.00 – 22.00 WITA </p>
+                        <p class="text-gray-700 font-medium">Waktu terbaik berkunjung:</p
+                        <p class="text-gray-700">Sore hari (15.00-18.00) untuk menikmati sunset spektakuler</p>
+                        
+                        <h3 class="text-2xl font-semibold text-gray-800 mt-6 mb-4 flex items-center">
+                            <i class="fas fa-ticket-alt text-blue-600 mr-3"></i> Tiket Masuk
+                        </h3>
+                        <p class="text-gray-700">Mulai dari Rp 20.000</p>
+                        <p class="text-gray-700">Beberapa atraksi khusus mungkin memungut biaya tambahan</p>
+                        
+                        <!-- Booking Button -->
+                        <div class="mt-6">
+                            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20tiket%20ke%20Kubu%20Bakas" 
+                               target="_blank" 
+                               class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                                <i class="fas fa-ticket-alt mr-2"></i>
+                                Pesan Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Lokasi Kubu Bakas</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="rounded-xl overflow-hidden shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15782.929856182564!2d115.35494974802008!3d-8.5253343642748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd216da67ff05ef%3A0x5030bfbca832080!2sBakas%2C%20Kec.%20Banjarangkan%2C%20Kabupaten%20Klungkung%2C%20Bali!5e0!3m2!1sid!2sid!4v1754561348892!5m2!1sid!2sid"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="https://maps.app.goo.gl/uWVokaKTfqfFss868" 
+                       target="_blank" 
+                       class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Desa Wisata Bakas</h3>
+                    <p class="text-gray-300 mb-4">Menjelajahi keindahan alam dan budaya Indonesia yang memukau.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-300">Jl Dewi Sri No. 2, Dusun Kangin, Desa Bakas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-300">+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-300">kububakas@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Destinasi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Aktivitas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Paket Wisata</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Desa Wisata Bakas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="fixed right-6 bottom-6 flex flex-col space-y-4 z-50">
+        <!-- AI Assistant Button -->
+        <a href="https://landbot.online/v3/H-3085014-WVIZ98DJT4P4NK2A/index.html" 
+           target="_blank" 
+           class="floating-btn bg-gradient-to-r from-purple-600 to-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fas fa-robot text-2xl"></i>
+        </a>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Kubu%20Bakas" 
+           target="_blank" 
+           class="floating-btn bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- AI Assistant Modal (hidden by default) -->
+    <div id="aiModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl w-full max-w-md mx-4">
+            <div class="p-4 border-b flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-800">AI Travel Assistant</h3>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="p-4">
+                <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                    <p class="text-gray-700">Halo! Saya AI Assistant yang akan membantu Anda merencanakan perjalanan ke                     Kubu Bakas. Apa yang ingin Anda ketahui?</p>
+                </div>
+                <div class="space-y-2">
+                    <button class="quick-question bg-blue-100 text-blue-800 rounded-full px-4 py-2 text-sm hover:bg-blue-200 transition">
+                        Bagaimana cara ke Kubu Bakas?
+                    </button>
+                    <button class="quick-question bg-blue-100 text-blue-800 rounded-full px-4 py-2 text-sm hover:bg-blue-200 transition">
+                        Hotel rekomendasi di sekitar Danau Toba
+                    </button>
+                    <button class="quick-question bg-blue-100 text-blue-800 rounded-full px-4 py-2 text-sm hover:bg-blue-200 transition">
+                        Aktivitas terbaik di Danau Toba
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <input type="text" placeholder="Tulis pertanyaan Anda..." class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="mt-2 bg-blue-600 text-white rounded-lg px-4 py-2 w-full hover:bg-blue-700 transition">
+                        Kirim Pertanyaan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // AI Assistant Modal Functionality
+        const aiAssistant = document.getElementById('aiAssistant');
+        const aiModal = document.getElementById('aiModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        aiAssistant.addEventListener('click', () => {
+            aiModal.classList.remove('hidden');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            aiModal.classList.add('hidden');
+        });
+        
+        // Close modal when clicking outside
+        aiModal.addEventListener('click', (e) => {
+            if (e.target === aiModal) {
+                aiModal.classList.add('hidden');
+            }
+        });
+        
+        // Quick question buttons
+        const quickQuestions = document.querySelectorAll('.quick-question');
+        quickQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const question = button.textContent;
+                document.querySelector('input[type="text"]').value = question;
+            });
+        });
+    </script>
+</body>
+</html>

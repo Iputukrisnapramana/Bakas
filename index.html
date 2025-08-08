@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Wisata Bakas - Jelajahi Keindahan Bali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-image {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .destination-card {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .floating-btn {
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero-image relative" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/66/ed/80/caption.jpg?w=1200&h=-1&s=1')">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Desa Wisata Bakas</h1>
+                <p class="text-xl md:text-2xl text-white italic mb-8">Jelajahi Keindahan Alam dan Budaya Bali yang Autentik</p>
+                <a href="#destinations" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Mulai Jelajahi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Introduction -->
+        <section class="mb-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Selamat Datang di Desa Wisata Bakas</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Temukan pesona tersembunyi Bali di Desa Bakas, Klungkung. Nikmati pengalaman wisata yang autentik dengan 
+                pemandangan sawah hijau, petualangan sungai yang menantang, kuliner tradisional yang lezat, dan keramahan 
+                penduduk lokal yang tak terlupakan.
+            </p>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Destinasi Pilihan</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Kubu Bakas -->
+                <div class="destination-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/66/ed/80/caption.jpg?w=1200&h=-1&s=1')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Kubu Bakas</h3>
+                        <p class="text-gray-600 mb-4">Guest house tradisional di tengah sawah hijau dengan pengalaman desa yang autentik</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold">Mulai Rp 20.000</span>
+                            <a href="KubuBakas.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                                <i class="fas fa-arrow-right mr-2"></i>Kunjungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arsa Wayan Guest House -->
+                <div class="destination-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-dskt/tix-hotel/images-web/2024/04/15/fe061530-82ee-4e22-b050-03d2e70d0a38-1713160110625-6ffe61558b2ca1ad1a220b37df2407d0.jpg')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Arsa Wayan Guest House</h3>
+                        <p class="text-gray-600 mb-4">Penginapan nyaman bernuansa Bali di tengah suasana alami dan tenang</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold">Mulai Rp 400.000</span>
+                            <a href="ArsaWayanGuest.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                                <i class="fas fa-arrow-right mr-2"></i>Kunjungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laklak Pengangon -->
+                <div class="destination-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://awsimages.detik.net.id/community/media/visual/2024/11/10/kuliner-laklak-di-warung-laklak-pengangon-desa-bakas-kecamatan-banjarangkan-klungkung-putu-kristadetikbali_169.jpeg?w=1200')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Laklak Pengangon</h3>
+                        <p class="text-gray-600 mb-4">Nikmati kopi dengan jajanan khas Bali di tepi sawah yang asri</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold">Mulai Rp 5.000</span>
+                            <a href="LaklakPengangon copy.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                                <i class="fas fa-arrow-right mr-2"></i>Kunjungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bakas Levi Rafting -->
+                <div class="destination-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://www.raftingbali.net/wp-content/uploads/2019/10/The-Bakas-Levi-Rafting.jpg')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bakas Levi Rafting</h3>
+                        <p class="text-gray-600 mb-4">Petualangan rafting menantang di Sungai Melangit dengan jeram kelas III-IV</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold">Mulai Rp 250.000</span>
+                            <a href="levirafting.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                                <i class="fas fa-arrow-right mr-2"></i>Kunjungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Melangit Bali Adventure -->
+                <div class="destination-card bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/f9/39/dc.jpg')"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Melangit Bali Adventure</h3>
+                        <p class="text-gray-600 mb-4">Rasakan serunya petualangan dan jelajahi alam Bali yang masih asri</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-blue-600 font-semibold">Mulai Rp 250.000</span>
+                            <a href="MelangitBali.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                                <i class="fas fa-arrow-right mr-2"></i>Kunjungi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12 text-center">Mengapa Memilih Desa Wisata Bakas?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Alam yang Asri</h3>
+                    <p class="text-gray-600">Nikmati keindahan alam Bali yang masih terjaga dengan pemandangan sawah hijau dan udara segar</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Keramahan Lokal</h3>
+                    <p class="text-gray-600">Rasakan kehangatan dan keramahan penduduk lokal yang akan membuat kunjungan Anda berkesan</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pengalaman Autentik</h3>
+                    <p class="text-gray-600">Dapatkan pengalaman wisata yang autentik dengan budaya dan tradisi Bali yang masih terjaga</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Desa Wisata Bakas</h3>
+                    <p class="text-gray-300 mb-4">Menjelajahi keindahan alam dan budaya Indonesia yang memukau di Klungkung, Bali.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-300">Desa Bakas, Banjarangkan, Klungkung, Bali</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-300">+62 812 3456 7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-300">info@desawisatabakas.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Destinasi Populer</h3>
+                    <ul class="space-y-2">
+                        <li><a href="KubuBakas.html" class="text-gray-300 hover:text-white transition">Kubu Bakas</a></li>
+                        <li><a href="ArsaWayanGuest.html" class="text-gray-300 hover:text-white transition">Arsa Wayan Guest House</a></li>
+                        <li><a href="LaklakPengangon copy.html" class="text-gray-300 hover:text-white transition">Laklak Pengangon</a></li>
+                        <li><a href="levirafting.html" class="text-gray-300 hover:text-white transition">Bakas Levi Rafting</a></li>
+                        <li><a href="MelangitBali.html" class="text-gray-300 hover:text-white transition">Melangit Adventure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Desa Wisata Bakas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="fixed right-6 bottom-6 flex flex-col space-y-4 z-50">
+        <!-- AI Assistant Button -->
+        <a href="https://landbot.online/v3/H-3085014-WVIZ98DJT4P4NK2A/index.html" 
+           target="_blank" 
+           class="floating-btn bg-gradient-to-r from-purple-600 to-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fas fa-robot text-2xl"></i>
+        </a>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Desa%20Wisata%20Bakas" 
+           target="_blank" 
+           class="floating-btn bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

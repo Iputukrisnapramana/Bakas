@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laklak Pengangon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-image {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .floating-btn {
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero-image relative" style="background-image: url('https://awsimages.detik.net.id/community/media/visual/2024/11/10/kuliner-laklak-di-warung-laklak-pengangon-desa-bakas-kecamatan-banjarangkan-klungkung-putu-kristadetikbali_169.jpeg?w=1200')">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Laklak Pengangon</h1>
+                <p class="text-xl md:text-2xl text-white italic">Nikmati Kopi dengan Jajanan Khas Bali di tepi sawah</p>
+                <a href="#explore" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Jelajahi Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+   <!-- Destination Info -->
+<section id="explore" class="mb-16">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Mengenal Laklak Penganggon</h2>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+            Laklak Penganggon adalah warung lokal yang menjual jajanan tradisional khas Bali, khususnya laklak – kue tradisional yang terbuat dari tepung beras dan santan, disajikan dengan parutan kelapa dan gula merah cair. Warung ini terletak di Desa Bakas, Klungkung, dan dikenal sebagai salah satu tempat terbaik untuk mencicipi laklak otentik dengan suasana pedesaan yang sejuk dan alami.
+        </p>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+            Beralamat di Desa Bakas, Kecamatan Banjarangkan, Kabupaten Klungkung, Bali – lokasi strategis dekat beberapa spot wisata seperti Melangit Rafting dan guesthouse lokal.
+        </p>
+        
+        <div class="grid md:grid-cols-2 gap-8 mt-10">
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Aktivitas Menarik</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-utensils text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Mencicipi laklak tradisional langsung dari dapur pembuatnya</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-leaf text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Menikmati makanan dengan pemandangan sawah dan udara segar desa</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-camera text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Foto-foto suasana warung tradisional dan plating laklak yang menarik</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-hands-helping text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Interaksi langsung dengan penjual dan warga setempat yang ramah</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-shopping-basket text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Membeli jajanan tradisional khas Bali untuk oleh-oleh</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Keunikan</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-cookie-bite text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Resep laklak turun-temurun yang dijaga keasliannya</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-seedling text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Menggunakan bahan alami seperti santan segar, tepung beras lokal, dan gula merah asli Bali</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-smile text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Harga terjangkau, suasana hangat khas pedesaan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Lokasi strategis untuk istirahat kuliner setelah aktivitas rafting atau jelajah desa</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Gallery -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Galeri Laklak Pengangon</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2023/04/16/laklak-campur-terdiri-atas-kue-laklak-injin-kukus-olen-olen-ditambah-kelapa-parut_169.jpeg?w=620" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2024/11/06/4049713571.jpg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/baliexpress/2018/11/menikmati-laklak-dengan-nuansa-beda-di-warung-pengangon_m_101896.jpeg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/e3ac1b87-1a7c-4474-9f5d-9e8c42bd7ab6_Go-Biz_20241114_130714.jpeg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6a8f22bb-33a8-4642-87d4-c5069a2734ee_IMG_20201019_103501_322.jpg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://biliksastra.com/wp-content/uploads/2024/12/Utama-Warung-Laklak-Pengangon-Kuliner-Bali-Bernuansa-Pedesaan-500x500.jpg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+            </div>
+        </section>
+
+        <!-- Video -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center"></h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container rounded-xl overflow-hidden shadow-xl">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g2PJjdse34U?si=alAe7daaxtbrWO0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+<section class="mb-16">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Informasi Praktis</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-info-circle text-blue-600 mr-3"></i> Fasilitas
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Tempat duduk santai dengan pemandangan sawah</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Parkir kendaraan roda dua dan empat</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Toilet sederhana namun bersih</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Dapur terbuka (dapat melihat proses pembuatan laklak)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Tempat sampah ramah lingkungan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Area makan berat dan minuman tradisional</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-clock text-blue-600 mr-3"></i> Jam Operasional
+                </h3>
+                <p class="text-gray-700 mb-4">Buka setiap hari pukul <strong>07.00 – 18.00 WITA</strong>, tergantung ketersediaan bahan dan cuaca.</p>
+                <p class="text-gray-700 font-medium">Waktu terbaik berkunjung:</p>
+                <p class="text-gray-700">Pagi hari (07.00–10.00) saat laklak baru dimasak dan masih hangat</p>
+                
+                <h3 class="text-2xl font-semibold text-gray-800 mt-6 mb-4 flex items-center">
+                    <i class="fas fa-ticket-alt text-blue-600 mr-3"></i> Harga & Tiket
+                </h3>
+                <p class="text-gray-700">Gratis masuk, cukup bayar pesanan makanan di tempat</p>
+                <p class="text-gray-700">Harga laklak mulai dari <strong>Rp 5.000 per porsi</strong></p>
+                
+                <!-- Booking Button -->
+                <div class="mt-6">
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Laklak%20Penganggon" 
+                       target="_blank" 
+                       class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                        <i class="fas fa-comment-dots mr-2"></i>
+                        Tanya Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Location -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Lokasi Laklak Pengangon</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="rounded-xl overflow-hidden shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.6946933524955!2d115.36290407501306!3d-8.528992391513743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd217c8759b08cb%3A0x2008c830ad91e399!2sWarung%20Laklak%20Pengangon%20Bakas!5e0!3m2!1sid!2sid!4v1754621568810!5m2!1sid!2sid" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="https://maps.app.goo.gl/8azXxtYv5zE1XEdF7" 
+                       target="_blank" 
+                       class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Laklak Pengangon</h3>
+                <p class="text-gray-300 mb-4">Nikmati kelezatan jajanan tradisional Bali di tengah suasana persawahan yang menenangkan.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                        <span class="text-gray-300">Banjarangkan, Desa Wisata Bakas, Klungkung, Bali</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                        <span class="text-gray-300">+62 813 1234 5678</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                        <span class="text-gray-300">laklakpengangon@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Beranda</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Menu</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Ulasan</a></li>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Desa Wisata Bakas. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="fixed right-6 bottom-6 flex flex-col space-y-4 z-50">
+        <!-- AI Assistant Button -->
+        <a href="https://landbot.online/v3/H-3085014-WVIZ98DJT4P4NK2A/index.html" 
+           target="_blank" 
+           class="floating-btn bg-gradient-to-r from-purple-600 to-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fas fa-robot text-2xl"></i>
+        </a>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Kubu%20Bakas" 
+           target="_blank" 
+           class="floating-btn bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+   
+
+    <script>
+        // AI Assistant Modal Functionality
+        const aiAssistant = document.getElementById('aiAssistant');
+        const aiModal = document.getElementById('aiModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        aiAssistant.addEventListener('click', () => {
+            aiModal.classList.remove('hidden');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            aiModal.classList.add('hidden');
+        });
+        
+        // Close modal when clicking outside
+        aiModal.addEventListener('click', (e) => {
+            if (e.target === aiModal) {
+                aiModal.classList.add('hidden');
+            }
+        });
+        
+        // Quick question buttons
+        const quickQuestions = document.querySelectorAll('.quick-question');
+        quickQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const question = button.textContent;
+                document.querySelector('input[type="text"]').value = question;
+            });
+        });
+    </script>
+</body>
+</html>

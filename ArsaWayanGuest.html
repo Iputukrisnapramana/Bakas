@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsa Wayan Guest House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-image {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        .floating-btn {
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="hero-image relative" style="background-image: url('https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-dskt/tix-hotel/images-web/2024/04/15/fe061530-82ee-4e22-b050-03d2e70d0a38-1713160110625-6ffe61558b2ca1ad1a220b37df2407d0.jpg')">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Arsa Wayan GuestHouse</h1>
+                <p class="text-xl md:text-2xl text-white italic">Penginapan nyaman bernuansa Bali di tengah suasana alami dan tenang</p>
+                <a href="#explore" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Jelajahi Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+   <!-- Destination Info -->
+<section id="explore" class="mb-16">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Mengenal Arsa Wayan Guest House</h2>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+            Arsa Wayan Guest House adalah penginapan bernuansa tradisional Bali yang terletak di Desa Bakas, Klungkung. Dikelilingi hamparan sawah hijau dan nuansa pedesaan yang tenang, penginapan ini menawarkan suasana asri dan nyaman bagi para pelancong yang mencari ketenangan di tengah alam.
+        </p>
+        <p class="text-gray-700 mb-6 leading-relaxed">
+            Penginapan ini sangat cocok untuk wisatawan yang ingin merasakan keramahan lokal Bali dan suasana khas desa. Berlokasi strategis dekat dengan berbagai destinasi seperti Melangit Rafting dan kuliner lokal seperti Laklak Pengangon.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 mt-10">
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Aktivitas Menarik</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-bed text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Menginap di kamar bernuansa etnik Bali dengan sentuhan modern</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-seedling text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Berjalan-jalan menyusuri persawahan dan menikmati udara segar</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-coffee text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Sarapan tradisional Bali yang disajikan langsung oleh pemilik rumah</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-users text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Rasakan satu hari menjadi orang Bali</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-mountain text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Akses mudah ke atraksi alam dan wisata petualangan di sekitar desa</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Keunikan</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-home text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Pengalaman menginap seperti di rumah sendiri dengan pelayanan ramah</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-tree text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Suasana tenang, jauh dari hiruk pikuk kota</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-balance-scale text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Harga bersahabat dengan fasilitas memadai</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-handshake text-blue-600 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Langsung dikelola oleh keluarga lokal yang peduli dengan kenyamanan tamu</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Gallery -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Galeri Arsa Wayan GuestHouse</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/203205206.jpg?k=3674950770396ab3215a62581f3a6644539a40faac14e76fd7795a99c796ea5e&o=&hp=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/t_htl-dskt/tix-hotel/images-web/2024/04/15/344843dc-8162-42fa-af11-1f84919f2993-1713160113952-c01f080a9a027bb9ca19772f6bb2667d.jpg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/203205215.jpg?k=994864e9b39b9aa614f9175deca2fd3c7df6635976d137720cf8046887579782&o=&hp=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/389342335.jpg?k=c6c47bd772c74e3c9942a599e23a720e6ae010ac86e7635397f79d337fe50536&o=&hp=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6a8f22bb-33a8-4642-87d4-c5069a2734ee_IMG_20201019_103501_322.jpg" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/203205185.jpg?k=1015aaab3cec1995adcdf10c866bb6316e6d7566befbc1605bcb15a800270eaf&o=&hp=1" 
+                         alt="kububakas" 
+                         class="w-full h-64 object-cover hover:opacity-90 transition">
+                </div>
+            </div>
+        </section>
+
+        <!-- Video -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center"></h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container rounded-xl overflow-hidden shadow-xl">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1iC8YlJMKKk?si=iEdaBhOX0raNBO7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+<section class="mb-16">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Informasi Praktis</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-info-circle text-blue-600 mr-3"></i> Fasilitas
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Kamar nyaman dengan AC atau kipas angin</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Kamar mandi dalam dengan air panas/dingin</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Sarapan tradisional disediakan setiap pagi</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Pemandangan sawah dan suasana pedesaan yang asri</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Wi-Fi gratis untuk tamu</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span class="text-gray-700">Area parkir luas untuk motor dan mobil</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-clock text-blue-600 mr-3"></i> Jam Operasional
+                </h3>
+                <p class="text-gray-700 mb-4">Check-in mulai pukul <strong>14.00 WITA</strong>, check-out maksimal <strong>12.00 WITA</strong>.</p>
+                <p class="text-gray-700 font-medium">Waktu terbaik untuk menginap:</p>
+                <p class="text-gray-700">Musim liburan dan akhir pekan untuk pengalaman maksimal di pedesaan</p>
+                
+                <h3 class="text-2xl font-semibold text-gray-800 mt-6 mb-4 flex items-center">
+                    <i class="fas fa-ticket-alt text-blue-600 mr-3"></i> Harga & Reservasi
+                </h3>
+                <p class="text-gray-700">Harga menginap mulai dari <strong>Rp 700.000 per malam</strong> (Untuk Wisatawan Mancanegara), <strong>Rp 400.000 per malam</strong> (Untuk Wisatawan Domestik) </p>
+                <p class="text-gray-700">Reservasi dapat dilakukan melalui WhatsApp</p>
+            
+            <div class="mt-6">
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Laklak%20Penganggon" 
+                   target="_blank" 
+                   class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-comment-dots mr-2"></i>
+                    Tanya Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>  
+
+ 
+                
+
+
+        <!-- Location -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Lokasi Arsa Wayan guest House</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="rounded-xl overflow-hidden shadow-xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.766127613814!2d115.36094137501306!3d-8.522072791520431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2175c44a2deed%3A0xbdf3fc5b8423f740!2sArsa%20Wayan%20Guest%20House!5e0!3m2!1sid!2sid!4v1754622888765!5m2!1sid!2sid"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="mt-4 text-center">
+                    <a href="https://maps.app.goo.gl/AkoRX4LaPTykjXb66" 
+                       target="_blank" 
+                       class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        <i class="fas fa-map-marker-alt mr-2"></i> Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Arsa Wayan Guest House</h3>
+                <p class="text-gray-300 mb-4">Penginapan nyaman bernuansa Bali di tengah suasana alami dan tenang Desa Wisata Bakas.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                        <span class="text-gray-300">Banjarangkan, Desa Wisata Bakas, Klungkung, Bali</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                        <span class="text-gray-300">+62 812 3456 7890</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                        <span class="text-gray-300">arsawayanguesthouse@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Beranda</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Kamar</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Galeri</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white transition">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 Arsa Wayan Guest House. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Floating Buttons -->
+    <div class="fixed right-6 bottom-6 flex flex-col space-y-4 z-50">
+        <!-- AI Assistant Button -->
+        <a href="https://landbot.online/v3/H-3085014-WVIZ98DJT4P4NK2A/index.html" 
+           target="_blank" 
+           class="floating-btn bg-gradient-to-r from-purple-600 to-blue-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fas fa-robot text-2xl"></i>
+        </a>
+        
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Kubu%20Bakas" 
+           target="_blank" 
+           class="floating-btn bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+   
+
+    <script>
+        // AI Assistant Modal Functionality
+        const aiAssistant = document.getElementById('aiAssistant');
+        const aiModal = document.getElementById('aiModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        aiAssistant.addEventListener('click', () => {
+            aiModal.classList.remove('hidden');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            aiModal.classList.add('hidden');
+        });
+        
+        // Close modal when clicking outside
+        aiModal.addEventListener('click', (e) => {
+            if (e.target === aiModal) {
+                aiModal.classList.add('hidden');
+            }
+        });
+        
+        // Quick question buttons
+        const quickQuestions = document.querySelectorAll('.quick-question');
+        quickQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const question = button.textContent;
+                document.querySelector('input[type="text"]').value = question;
+            });
+        });
+    </script>
+</body>
+</html>
